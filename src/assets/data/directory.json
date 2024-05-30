@@ -1,0 +1,24 @@
+{
+  "de": {
+    "standard": {
+      "raw_filename": "german_standard.csv",
+      "graph_filename": "german_standard_graph.csv"
+    }
+  },
+  "en": {
+    "sports": {
+      "raw_filename": "english_sports.csv",
+      "graph_filename": "english_sports_graph.csv"
+    },
+    "standard": {
+      "raw_filename": "english_standard.csv",
+      "graph_filename": "english_standard_graph.csv"
+    }
+  },
+  "it": {
+    "standard": {
+      "raw_filename": "italian_standard.csv",
+      "graph_filename": "italian_standard_graph.csv"
+    }
+  }
+}
