@@ -199,7 +199,7 @@ Maus,Sendung,Ratte,grau,Falle,Katze
 Schwein,Nutztier,Wildschwein,rosa,Fleisch,Sau,grunzen,Stall
 Film,Kino,Leinwand,Star Wars,Video,Bilder
 Hut,Jäger,Mütze,Kappe,Zylinder,Regen,Kopfbedeckung
-Stift,Kugelschreiber,Bleistift,schreiben,pPpier,Buchstaben,zeichnen
+Stift,Kugelschreiber,Bleistift,schreiben,Papier,Buchstaben,zeichnen
 Rettungsschwimmer,DLRG,Schwimmbad,ertrinken,abschleppen,reanimieren,Notfall
 Feuerwehr,rot,Drehleiter,112,Notruf,brennen,löschen,Wasser
 Silvester,Neujahr,Ende,Feuerwerk,anstoßen,Feier
@@ -507,3 +507,11 @@ cool,toll,geil,besonders,Ausruf,kühl
 dynamisierend,statisch,veränderlich,anschieben,Verbesserung
 Spätausgabe,früh,Zeitungsexemplar,Nachrichtensendung,Abend,Nachmittag
 Gasofen,Zentralheizung,Kamin,Schornstein,wärmen,Feuerholz
+Energiedach,Solarzellen,Dachziegeln,Regenschutz,Stromproduktion,Solarthermie,oben
+Fliegeruniform,Kampfjet,Militär,Tarnkleidung,Flugzeug,Schutzanzug
+lexikografisch,Telefonbuch,Duden,Sortierung,Reihenfolge,alphabetisch
+privatisieren,Kapitalismus,Kommunismus,Börsengang,Unternehmen,Wirtschaft,DDR
+mitlesen,Spionage,Smartphone,Nachrichten,abhöhren,rüberschauen
+gesüßt,Zucker,Geschmacksverstärker,Kuchen,Snack
+Birnensaft,Apfelschorle,Getränk,Obst,Frucht,Glas
+bewundern,Superstar,bestaunen,Vorbild,Fankultur,hochschauen

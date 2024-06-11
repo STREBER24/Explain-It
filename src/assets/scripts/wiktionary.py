@@ -5,7 +5,7 @@ import csv
 import io
 
 try:
-    filename = 'data/german_standard.csv'
+    filename = 'src/assets/data/german_standard.csv'
     site = pywikibot.Site('de', 'wiktionary')
     generator = pg.RandomPageGenerator(None, site)
     for page in generator:
@@ -19,7 +19,7 @@ try:
         elif title.startswith('Reim:Deutsch:') or title.startswith('Benutzer:') or \
             title.startswith('Kategorie:') or title.startswith('Wiktionary:') or \
                 title.startswith('Diskussion:') or title.endswith('/Gerundivum') or \
-                    title.startswith('Vorlage:'):
+                    title.startswith('Vorlage:') or title.startswith('Kategorie Diskussion:'):
             continue
         print()
         res = input(title + ' : ')
