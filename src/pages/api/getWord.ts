@@ -10,7 +10,7 @@ export type Data = { ok: false; error: string } | { ok: true; data: TabooWord }
 function loadFiles(filename: string) {
   return new Map(
     fs
-      .readFileSync(`${process.env.ASSETS_PATH}/${filename}`, "utf8")
+      .readFileSync(`${process.cwd()}/src/assets/data/${filename}`, "utf8")
       .split("\n")
       .slice(1)
       .flatMap((a) => {
