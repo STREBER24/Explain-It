@@ -41,7 +41,7 @@ export default function Home() {
   }
 
   return (
-    <main className="p-4 max-w-md mx-auto">
+    <main className="p-4 max-w-md mx-auto bg-white min-h-screen">
       <CardView {...data} mainView={true} />
       <button
         className="bg-amber-200 rounded-xl p-2 my-4 w-full text-xl"
