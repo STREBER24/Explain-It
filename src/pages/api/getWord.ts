@@ -1,3 +1,4 @@
+import { wordFiles } from "@/assets/data/directoryInfo"
 import { NextApiRequest, NextApiResponse } from "next"
 import { randomInt } from "crypto"
 import { parse } from "csv/sync"
@@ -61,16 +62,6 @@ export default async function handler(
     })
     return
   }
-
-  const wordFiles: Record<
-    string,
-    Record<
-      string,
-      { description: string; raw_filename: string; graph_filename: string }
-    >
-  > = JSON.parse(
-    fs.readFileSync(`${process.env.ASSETS_PATH}/directory.json`, "utf8")
-  )
 
   const validLanguages = Object.keys(wordFiles)
   const language = searchParams.get("lang")
