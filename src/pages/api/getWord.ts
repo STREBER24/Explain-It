@@ -73,7 +73,7 @@ export default async function handler(
     return
   }
 
-  const variantFiles = wordFiles[language]
+  const variantFiles = wordFiles[language].variants
   const validNames = Object.keys(variantFiles)
   const name = searchParams.get("name")
   if (name === null || !validNames.includes(name)) {
