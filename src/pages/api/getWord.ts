@@ -1,4 +1,3 @@
-import { wordFiles } from "@/assets/data/directoryInfo"
 import { NextApiRequest, NextApiResponse } from "next"
 import { randomInt } from "crypto"
 import { parse } from "csv/sync"
@@ -6,6 +5,19 @@ import fs from "fs"
 
 export type TabooWord = { targetWord: string; blockedWords: string[] }
 export type Data = { ok: false; error: string } | { ok: true; data: TabooWord }
+
+const wordFiles: Record<
+  string,
+  {
+    name: string
+    variants: Record<
+      string,
+      { description: string; raw_filename: string; graph_filename: string }
+    >
+  }
+> = JSON.parse(
+  fs.readFileSync(`${process.cwd()}/src/assets/data/directory.json`, "utf8")
+)
 
 function loadFiles(filename: string) {
   return new Map(

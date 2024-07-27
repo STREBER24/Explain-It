@@ -7,7 +7,8 @@ prefix = 'src/assets/data/'
 with io.open(prefix+'directory.json', encoding='utf8') as file:
     directory: dict[str,dict] = json.load(file)
 
-for languageCode, variants in directory.items():
+for languageCode, languageInfo in directory.items():
+    variants = languageInfo['variants']
     for name, info in variants.items():
         filename = info.get('raw_filename')
         if filename is None:
